@@ -21,9 +21,9 @@ func regenerate_mesh() -> void:
 		array_mesh = ArrayMesh.new()
 		mesh = array_mesh
 	array_mesh.clear_surfaces()
-	var surface_array := create_sphere(subdivisions)
+	var surface_array := create_sphere(subdivisions) #create_cube
 	array_mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, surface_array)
-	make_wire() # Just for the purposes of debugging, probably should be turned off in a real project
+	#make_wire() # Just for the purposes of debugging, probably should be turned off in a real project
 
 func make_wire():
 	var material := array_mesh.surface_get_material(0)

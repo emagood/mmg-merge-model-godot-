@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://rj4dl8hjd8js"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ds1d"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.054902)
+grow = true
+grow_amount = 0.001
+
+[resource]
+next_pass = SubResource("StandardMaterial3D_3ds1d")
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0.53155, 0.849509, 1)
+metallic = 0.12
+metallic_specular = 1.0
+roughness = 0.18
+rim_enabled = true
+rim = 0.07
+clearcoat = 0.28
+clearcoat_roughness = 1.0
